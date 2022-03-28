@@ -9,7 +9,7 @@ using UnityEngine;
     public class PasswordNetworkManager : MonoBehaviour
     {
         [SerializeField] private TMP_InputField passwordInputField;
-       // [SerializeField] private GameObject teamPickerUI;
+        [SerializeField] private GameObject teamPickerUI;
         [SerializeField] private GameObject passwordEntryUI;
         [SerializeField] private GameObject leaveButton;
 
@@ -56,7 +56,7 @@ using UnityEngine;
 
             passwordEntryUI.SetActive(true);
             leaveButton.SetActive(false);
-           // teamPickerUI.SetActive(false);
+            teamPickerUI.SetActive(false);
         }
 
         private void HandleServerStarted()
@@ -75,7 +75,7 @@ using UnityEngine;
             {
                 passwordEntryUI.SetActive(false);
                 leaveButton.SetActive(true);
-                //teamPickerUI.SetActive(true);
+                teamPickerUI.SetActive(true);
             }
         }
 
@@ -86,7 +86,7 @@ using UnityEngine;
             {
                 passwordEntryUI.SetActive(true);
                 leaveButton.SetActive(false);
-               // teamPickerUI.SetActive(false);
+                teamPickerUI.SetActive(false);
             }
         }
 
